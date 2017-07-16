@@ -61,6 +61,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Date fo Release.
+        /// </summary>
+        internal static string ReleaseDateDisplay {
+            get {
+                return ResourceManager.GetString("ReleaseDateDisplay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please supply Release Date.
+        /// </summary>
+        internal static string ReleaseDateRequiredErrorMessage {
+            get {
+                return ResourceManager.GetString("ReleaseDateRequiredErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This is a resource.
         /// </summary>
         internal static string String1 {
