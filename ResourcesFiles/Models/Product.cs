@@ -13,7 +13,9 @@ namespace ResourcesFiles.Models
         public Guid Id { get; set; }
         public string  Name { get; set; }
         public decimal  Price { get; set; }
-        [Display(ResourceType = typeof(ErrorMessageResources), Name = "ReleaseDateDisplay")]
+        [Display(ResourceType = typeof(ErrorMessageResources), 
+            Name = "ReleaseDateDisplay")]
+        [Required(AllowEmptyStrings = false, ErrorMessageResourceType = typeof(ErrorMessageResources), ErrorMessageResourceName = "ReleaseDateRequiredErrorMessage")]
         public DateTime ReleaseDate { get; set; }
     }
 }
